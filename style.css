@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    background-color: rgb(98 123 191);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(172, 3, 172); 
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 9, 85); 
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header .logo {
+    color: rgb(211, 2, 211);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    margin-left: 40px; 
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+header ul li a:hover,
+header ul li a.active {
+    background-color: rgb(126, 3, 126);
+    color: white;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon {
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index: 11;
+}
+#text {
+    font-size: 9vw;
+    position: absolute;
+    right: -300px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+}
+ #explore {
+    position: absolute;
+    bottom: 35%;
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: black;
+    border-radius: 25px;
+    padding: 8px 30px;
+    z-index: 12;
+}
+#explore:hover {
+    background-color: rgb(126, 3, 126)
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
+}
+.sec h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.sec p {
+    color: white;
+    font-size: 1em;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    background: linear-gradient(to top, #1c0522,transparent);;
+    width: 100%;
+    height: 150px;
+    z-index: 13;
+}
+
